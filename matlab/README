@@ -1,0 +1,29 @@
+SimpleCT comes with a simple MATLAB interface
+
+In order to run the code, you need a C++
+compiler (only GCC 4.6.3 is tested so far) and
+compile the source for your environment.
+
+If you have not done yet should should first run:
+
+>> mex -setup
+
+to setup your compiler for MATLAB.
+
+After this step just run:
+
+>> matlab_setup
+
+If everything goes OK, this will compile SimpleCT
+for you and run the example script in "example.m".
+(The code is only tested in Ubuntu 12.04.)
+
+The executable comes with SimpleCT for MATLAB
+interface is ContourTree. This can be called as:
+
+% Computes and prunes the contour tree
+>> [ct ct_img] = ContourTree(img,0.1,32);
+
+% Plots the contour tree
+>> ContourTreePlot(img, ct, ct_img);
+

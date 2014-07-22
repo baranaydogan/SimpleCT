@@ -1,0 +1,48 @@
+This is a simple example for SimpleCT.
+
+You need to have cmake to be able to use
+the install script.
+
+
+INSTALLATION:
+
+Just run the "install" script as
+
+$./install
+
+This will create the executable
+"simpleExample"
+
+
+USAGE:
+
+$./simpleExample test_128x128.uint8 0.1 32 ct ct_img.raw
+
+
+Description of arguments:
+
+- First argument (test_128x128.uint8) is the name 
+of the input image file.
+
+The format of the file name is important.
+
+For "test_128x128.uint8", "_128x128" indicates the size.
+".uint8" indicates the data format. 
+
+The code supports 2D/3D images of types uint8 and uint16.
+Example: example3D_128x128x128.uint16
+
+
+- Second argument (0.1) is the intensity threshold
+used in pruning
+
+- Third argument (32) is the area/volume threshold
+used in pruning
+
+- Forth argument (ct) is the name of the file in which
+the output contour tree is written (the format description
+is included SimpleCT.h and SimpleCT.cpp).
+
+- Fifth argument (ct_img.raw) is the name of the file in which
+the output contour tree image is written (the format description
+is included SimpleCT.h and SimpleCT.cpp).
