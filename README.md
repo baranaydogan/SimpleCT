@@ -3,19 +3,11 @@ SimpleCT
 
 SimpleCT is a simple contour tree library with MATLAB interface.
 
+If you use this code in your work please cite the following publication:
 
--------------------------------------------------------------------
-FAST GUIDE:
-
-If you are familiar with MATLAB or intend to use SimpleCT in MATLAB,
-please go to the "matlab" folder and read the README file. This 
-explains and directs you on how to install and use SimpleCT.
-
-If you are planning to use SimpleCT in C/C++, please go to "example"
-folder and read the README file.
-
-
--------------------------------------------------------------------
+Aydogan D.B. & Hyttinen J. “Contour tree connectivity of binary images from 
+algebraic graph theory”, IEEE International Conference on Image Processing (ICIP), 
+15-22.09.2013, Melbourne, Australia
 
 -------------------------------------------------------------------
 DESCRIPTION:
@@ -35,6 +27,15 @@ join and split trees are computed in parallel. Although, it is not
 required, it is strongly recommended to install OpenMP and link the
 libraries for faster computation.
 
+-------------------------------------------------------------------
+FAST GUIDE:
+
+If you are familiar with MATLAB or intend to use SimpleCT in MATLAB,
+please go to the "matlab" folder and read the README file. This 
+explains and directs you on how to install and use SimpleCT.
+
+If you are planning to use SimpleCT in C/C++, please go to "example"
+folder and read the README file.
 
 ____________________________________________________________________
 LICENSE INFORMATION:
