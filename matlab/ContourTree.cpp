@@ -70,10 +70,10 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]) {
     
     // *********  Abort if the function is not called properly **********//
     if (nrhs < 1) {
-        mexErrMsgIdAndTxt("MATLAB:iradonmex_alt:rhs", "Aborting: This function requires at least 1 input. \n\n");
+        mexErrMsgIdAndTxt("MATLAB:ContourTree:rhs", "Aborting: This function requires at least 1 input. \n\n");
     }
     if (nrhs > 3) {
-        mexErrMsgIdAndTxt("MATLAB:iradonmex_alt:rhs", "Aborting: This function requires at most 3 inputs. \n\n");
+        mexErrMsgIdAndTxt("MATLAB:ContourTree:rhs", "Aborting: This function requires at most 3 inputs. \n\n");
     }
     
     double *img     = mxGetPr(prhs[0]);                 // Input image
